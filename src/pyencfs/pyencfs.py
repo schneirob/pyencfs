@@ -80,7 +80,10 @@ class PyEncfs():
                             "Identified mountpoint: "
                             "mountpoint=%s; "
                             "fstype=%s;"
-                            "device=%s;", part.mountpoint, part.fstype, part.device)
+                            "device=%s;",
+                            part.mountpoint,
+                            part.fstype,
+                            part.device)
                     if str(part.device) == "encfs" and \
                             str(part.fstype) == "fuse.encfs":
                         return True
