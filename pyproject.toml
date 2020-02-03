@@ -1,6 +1,6 @@
 [build-system]
-requires = ["setuptools>=40.6.0", "wheel", "logging", "subprocess",
-		"os", "pathlib", "psutil", "mock", "pytest"]
+# "pytest", "os", "mock", "logging", "pathlib", "psutil"
+requires = ["setuptools>=40.6.0", "wheel", "psutil", "pathlib"]
 build-backend = "setuptools.build_meta"
 
 # https://hynek.me/articles/sharing-your-labor-of-love-pypi-quick-and-dirty/ 

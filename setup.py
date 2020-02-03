@@ -5,6 +5,7 @@ import re
 from setuptools import setup, find_packages
 
 
+# https://hynek.me/articles/sharing-your-labor-of-love-pypi-quick-and-dirty/
 ###################################################################
 
 NAME = "pyencfs"
@@ -15,22 +16,18 @@ CLASSIFIERS = [
     "Development Status :: 0 - Private no upload",
     "Intended Audience :: Developers",
     "Natural Language :: English",
-    "License :: OSI Approved :: MIT License",
+    "License :: The unlicense",
     "Operating System :: OS Independent",
-    "Programming Language :: Python",
-    "Programming Language :: Python :: 2",
-    "Programming Language :: Python :: 2.7",
-    "Programming Language :: Python :: 3",
-    "Programming Language :: Python :: 3.4",
-    "Programming Language :: Python :: 3.5",
-    "Programming Language :: Python :: 3.6",
     "Programming Language :: Python :: 3.7",
     "Programming Language :: Python :: 3.8",
-    "Programming Language :: Python :: Implementation :: CPython",
     "Programming Language :: Python :: Implementation :: PyPy",
     "Topic :: Software Development :: Libraries :: Python Modules",
 ]
-INSTALL_REQUIRES = []
+
+INSTALL_REQUIRES = [
+        "pathlib>=1.0.1",
+        "psutil>=5.6.7",
+        ]
 
 ###################################################################
 
