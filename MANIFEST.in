@@ -1,0 +1,8 @@
+include LICENSE *.rst *.toml
+graft .github
+
+# Stubs
+recursive-include src *.py
+
+# Tests
+recursive-include tests *.py
