@@ -1,5 +1,5 @@
 from tests.utils.logging import LoggingCount
-from pyencfs.pyencfs import PyEncfs
+from src.pyencfs.pyencfs import PyEncfs
 import os
 import mock
 import logging
