@@ -1,5 +1,6 @@
-include LICENSE *.rst *.toml
-graft .github
+include LICENSE
+include README.rst
+include *.toml
 
 # Stubs
 recursive-include src *.py

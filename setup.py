@@ -7,10 +7,10 @@ from setuptools import setup, find_packages
 
 ###################################################################
 
-NAME = "attrs"
+NAME = "pyencfs"
 PACKAGES = find_packages(where="src")
-META_PATH = os.path.join("src", "attr", "__init__.py")
-KEYWORDS = ["class", "attribute", "boilerplate"]
+META_PATH = os.path.join("src", "pyencfs", "__init__.py")
+KEYWORDS = ["class", "encfs", "inline"]
 CLASSIFIERS = [
     "Development Status :: 0 - Private no upload",
     "Intended Audience :: Developers",
