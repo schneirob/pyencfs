@@ -12,10 +12,11 @@ class PyEncfs():
     using system.run shell excecution.
     """
 
-    def __init__(self):
+    def __init__(self, options="--standard"):
         self.name = "Encfs"
         self.log = logging.getLogger(__name__ + "." + self.name)
         self.log.debug("Initializing encfs")
+        self.options = options
         cmdok = True
         for c in ["echo", "encfs", "encfsctl", "fusermount"]:
             cmdok = cmdok and self._check_command(c)
@@ -196,7 +197,7 @@ class PyEncfs():
                 os.path.isdir(str(path_encrypted)):
             try:
                 subprocess.run("echo '" + str(password) + "' | " +
-                               "encfs --standard --stdinpass '" +
+                               "encfs " + self.options + " --stdinpass '" +
                                str(path_encrypted) + "' '" +
                                str(path_decrypted) + "'", shell=True)
             except Exception:
